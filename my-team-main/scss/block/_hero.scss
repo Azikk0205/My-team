@@ -1,0 +1,95 @@
+.hero-section {
+	background-image: url(../images/hreo-calc-bg.svg);
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position-x: calc(50% - 720px);
+}
+
+.hero {
+	background-image: url(../images/hero-bg.svg);
+	background-repeat: no-repeat;
+	background-size: 358px 100px;
+	background-position: bottom right;
+	padding-bottom: 250px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero__line {
+	display: inline-block;
+	background-color: #79c8c7;
+	width: 50px;
+	height: 4px;
+	margin-bottom: 79px;
+}
+
+.hero__title-block {
+	width: 535px;
+}
+.hero__title {
+	color: #fff;
+	font-size: 100px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100px;
+}
+.hero__title-red {
+	color: #f67e7e;
+}
+.hero__text-block {
+	width: 445px;
+	align-items: end;
+}
+.hero__text {
+	color: #fff;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+}
+
+@media only screen and (max-width: 660px) {
+	.hero {
+		flex-direction: column;
+		text-align: center;
+		background-position: bottom center;
+	}
+	.hero__title-block {
+		max-width: 400px;
+		margin-bottom: 24px;
+	}
+
+	.hero__line {
+		display: none;
+	}
+
+	.hero__title {
+		font-size: 64px;
+		line-height: 70px;
+	}
+	.hero__text-block {
+		max-width: 445px;
+	}
+}
+
+@media (max-width: 450px) {
+	.hero {
+		background-size: 100% auto;
+	}
+	.hero__title {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.hero__text {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.hero__text-block {
+		width: 100%;
+	}
+	.hero__title-block {
+		width: 100%;
+	}
+}
